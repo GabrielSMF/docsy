@@ -12,7 +12,7 @@
     padding-bottom: 5rem;
     background: {
         repeat: no-repeat;
-        position: 50% 0;
+        position: 50% -0%;
         size: cover;
     };
 
@@ -21,4 +21,15 @@
         bottom: 2px;
         right: 4px;
     }
+}
+
+.td-cover-block-small {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: {
+        repeat: no-repeat;
+        position: 50% 70%;
+        size: cover;
+    };
 }

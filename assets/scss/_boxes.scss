@@ -16,7 +16,7 @@
                 &::before {
                     left: 50%;
                     margin-left: -30px;
-                    bottom: -25px;
+                    bottom: -24px;
                     border: {
                         style: solid;
                         width: 25px 30px 0 30px;
@@ -43,6 +43,21 @@
     #{$parent} {
         &--height-auto {}
 
+        &--height-twoline {
+            min-height: 0px;
+            max-height: 0px;
+        }
+
+        &--height-nothing {
+            min-height: 1000px;
+            max-height: 1000px;
+        }
+
+        &--height-oneline {
+            min-height: 60px;
+            max-height: 60px;
+        }
+
         &--height-min {
             min-height: 300px;
         }
@@ -60,12 +75,26 @@
         }
 
         @include media-breakpoint-up(md) {
+            &--height-nothing {
+                min-height: 0px;
+                max-height: 0px;
+            }
+            &--height-oneline {
+                min-height: 60px;
+                max-height: 60px;
+            }
+
+            &--height-twoline {
+                min-height: 170px;
+                max-height: 170px;
+            }
+
             &--height-min {
-                min-height: 450px;
+                min-height: 300px;
             }
 
             &--height-med {
-                min-height: 500px;
+                min-height: 400px;
             }
 
             &--height-max {
