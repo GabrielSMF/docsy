@@ -3,6 +3,24 @@
 @import "variables";
 @import "support/mixins";
 
+$grid-breakpoints: (
+        xs: 0,
+        sm: 960px,
+        md: 961px,
+        lg: 962px,
+        xl: 1200px,
+        xxl: 1900px
+);
+    
+$container-max-widths: (
+        sm: 960px,
+        md: 961px,
+        lg: 962px,
+        xl: 1140px,
+        xxl: 1610px
+);
+    
+
 @import "../vendor/bootstrap/scss/bootstrap";
 
 @import "../vendor/Font-Awesome/scss/fontawesome.scss";

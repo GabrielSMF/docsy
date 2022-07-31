@@ -44,8 +44,8 @@
         &--height-auto {}
 
         &--height-twoline {
-            min-height: 0px;
-            max-height: 0px;
+            min-height: 200px;
+            max-height: 200px;
         }
 
         &--height-nothing {
@@ -85,7 +85,7 @@
             }
 
             &--height-twoline {
-                min-height: 170px;
+                min-height: 200px;
                 max-height: 170px;
             }
 
