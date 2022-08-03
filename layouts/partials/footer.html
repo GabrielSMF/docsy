@@ -24,7 +24,12 @@
 	{{ if not .Site.Params.ui.footer_about_disable }}
 		{{ with .Site.GetPage "about" }}<p class="mt-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
 	{{ end }}
-      </div>
+      <!-- </div>
+      <div class="text-center py-2 order-sm-2"> -->
+        <br>
+        {{ with .Site.Params.image_acks }}<small class="text-white"> {{ .}} 
+          <!-- {{ T "footer_all_rights_reserved" }} -->
+        </small>{{ end }}</div>
     </div>
   <!-- </div> -->
 </footer>
