@@ -4,7 +4,6 @@
 
 .td-navbar-cover {
     // background: $primary;
-
     @include media-breakpoint-up(md) {
         // background: $primary !important;
         background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.4));
@@ -16,12 +15,15 @@
 
     &.navbar-bg-onscroll .nav-link {
         text-shadow: none;
+        
     }
 }
 
 .navbar-bg-onscroll {
     // background: $primary !important;
     opacity: inherit;
+    background-color : $dark;
+   // background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1.0));
 }
 
 .td-navbar {
