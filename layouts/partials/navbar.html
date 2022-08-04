@@ -20,7 +20,7 @@
 				{{ if $active }}
 				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>{{ with .Pre}}{{ $pre }}{{ end }}<span style="font-family:Open Sans;font-size:16px;font-weight:700;text-transform: uppercase;border-bottom: 3px solid #fff;" {{if $active }} class="active" style="font-weight:600;"{{end}} >{{ .Name }}</span>{{ with .Post}}{{ $post }}{{ end }}</a>
 				{{else}}
-				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>{{ with .Pre}}{{ $pre }}{{ end }}<span style="font-family:Open Sans;font-size:16px;font-weight:500;text-transform: uppercase;" {{if $active }} class="active" style="font-weight:600;"{{end}} >{{ .Name }}</span>{{ with .Post}}{{ $post }}{{ end }}</a>
+				<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>{{ with .Pre}}{{ $pre }}{{ end }}<span style="font-family:Open Sans;font-size:16px;font-weight:700;text-transform: uppercase" {{if $active }} class="active" style="font-weight:600;"{{end}} >{{ .Name }}</span>{{ with .Post}}{{ $post }}{{ end }}</a>
 				{{end}}
 			</li>
 			{{ end }}
