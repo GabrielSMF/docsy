@@ -15,7 +15,8 @@
             .td-arrow-down {
                 &::before {
                     left: 50%;
-                    margin-left: -30px;
+                    right: 50%;
+                    margin-left: 0px;
                     bottom: -24px;
                     border: {
                         style: solid;
