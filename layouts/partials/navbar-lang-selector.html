@@ -3,8 +3,8 @@
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="font-family:Open Sans;font-weight:bold;font-size:16px">
 	{{ $langPage.Language.LanguageName }}
 </a>
-<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="overflow:visible">
 	{{ range $langPage.Translations }}
-	<a class="dropdown-item" href="{{ .RelPermalink }}" style="font-family:Open Sans;font-weight:400;font-size:16px;text-align: left;">{{ .Language.LanguageName }}</a>
+	<a class="dropdown-item" href="{{ .RelPermalink }}" style="font-family:Open Sans;font-weight:400;font-size:16px;text-align: left;overflow:visible">{{ .Language.LanguageName }}</a>
 	{{ end }}
 </div>
